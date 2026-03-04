@@ -1,0 +1,37 @@
+.about-page {
+  background: linear-gradient(135deg, #020617, #0f172a);
+}
+
+/* glass card */
+.skills-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(34, 211, 238, 0.2);
+  transition: all 0.35s ease;
+}
+
+/* hover effect */
+.skills-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  /* box-shadow: 0 25px 50px rgba(34, 211, 238, 0.25); */
+  border-color: #22d3ee;
+}
+
+/* skill badge */
+.skill-badge {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  background: rgba(34, 211, 238, 0.12);
+  color: #67e8f9;
+  border: 1px solid rgba(34, 211, 238, 0.25);
+  transition: 0.25s;
+  cursor: default;
+}
+
+/* badge hover */
+.skill-badge:hover {
+  background: #22d3ee;
+  color: #020617;
+  transform: translateY(-2px);
+}

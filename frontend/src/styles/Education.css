@@ -1,0 +1,30 @@
+/* section background */
+.education-section {
+  background: linear-gradient(135deg, #0f172a, #020617);
+}
+
+/* timeline dot */
+.timeline-dot {
+  position: absolute;
+  left: -8px;
+  width: 15px;
+  height: 15px;
+  background: #22d3ee;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #27d7f2;
+}
+
+/* glass card */
+.education-card {
+  background: rgba(255, 255, 255, 0.05);
+  /* backdrop-filter: blur(12px); */
+  border: 1px solid rgba(34, 211, 238, 0.2);
+  transition: all 0.35s ease;
+}
+
+/* hover effect */
+.education-card:hover {
+  transform: translatey(-3px) scale(1.02);
+  /* box-shadow: 0 20px 40px rgba(26, 61, 66, 0.091); */
+  border-color: #22d3ee;
+}

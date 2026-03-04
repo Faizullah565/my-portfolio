@@ -1,0 +1,38 @@
+
+.navbar{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.navbar.scrolled {
+  background: #00000053;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #22d3ee;
+  transition: 0.3s;
+}
+
+.nav-link.active {
+  color: #22d3ee;
+}
+
+.nav-link.active::after {
+  width: 100%;
+}
+
