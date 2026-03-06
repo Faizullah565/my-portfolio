@@ -1,4 +1,5 @@
 
+import dotenv from 'dotenv'
 
 import express from 'express'
 import cors from 'cors'
@@ -9,9 +10,10 @@ app.use(express.json())
 app.use(cors())
 
 connectToDB()
+dotenv.config();
 
 app.use('/api', messageRouter)
 
-app.listen(5000, () => {
-  console.log('Server is running on http://localhost:5000')
+app.listen(process.env.PORT, () => {
+  console.log(`Server is running on http://localhost:${process.env.PORT}`)
 })
